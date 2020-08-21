@@ -1,0 +1,280 @@
+/* Stylesheet for Portfolio */
+
+.maincolumncontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .col1{
+    background-color: #515968;
+    width: 40%;
+    text-align: center;
+  }
+  
+  .col1 h1{
+    margin-top: 20px;
+  }
+  
+  .col2{
+    background-color: #e6e6e6;
+    width: 60%;
+    text-align: center;
+  }
+  
+  .col2body{
+    margin-top: 35%;
+    font-family: 'Ruda';
+  }
+  
+  .profilepic img{
+    height: 35%;
+  }
+  
+  .profilepic{
+    margin-top: 32%;
+  }
+  
+  .profilepic h1{
+    color: white;
+  }
+  
+  .contactdiv {
+    height: 760px;
+  }
+  
+  /* NAVIGATION MENU */
+  .navbar {
+    overflow: hidden;
+    background-color: #c65c43;
+    width: 100%;
+    font-family: 'Ruda';
+  
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 12.8%;
+  }
+  
+  .navbar a:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* Portfolio layout code */
+  .projectsbody h1{
+    margin-top: 10%;
+    font-family: 'Ruda';
+  }
+  
+  .projectscol {
+    display: flex;;
+    flex-direction: row;
+  }
+  
+  .projcol1{
+    width: 40%;
+    height: 700px;
+  }
+  .projcol2 {
+    height: 700px;
+  }
+  
+  .projcol2 a{
+    display: block;
+      font-size: 1.5em;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight:normal;
+      font-family: 'Ruda';
+  }
+  
+  /* CV page layout code */
+  .cvcolumn1{
+    display: flex;;
+    flex-direction: row;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  .cvcolumn2{
+    display: flex;;
+    flex-direction: row;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  .cv1, .cv2, .cv3, .cv4 {
+    width: 50%;
+    margin-left: 30px;
+  }
+  
+  .cvcontainer{
+    margin-top: 100px;
+    font-family: 'Ruda';
+  }
+  
+  h2{
+    font-family: 'Ruda';
+  }
+  
+  /* Form Code */
+  
+  input[type=text], textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    background-color: #c65c43;
+    color: white;
+    padding: 22px 60px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Ruda';
+  }
+  
+  input[type=submit]:hover {
+    background-color: white;
+    font-family: 'Ruda';
+    color: black;
+  }
+  
+  /* Contact page code */
+  .formcontainer {
+    border-radius: 5px;
+    padding: 20px;
+    width: 60%;
+    margin-left: 20%;
+  }
+  
+  .contactdiv {
+    font-family: 'Mulish';
+    margin-top: 90px;
+  
+  }
+  
+  /* Footer code */
+  footer{
+    background-color: #c65c43;
+    margin-top: -16px;
+    height: 70px;
+    text-align: center;
+    font-family: 'Ruda';
+    font-size: 15px;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 97.5%;
+  }
+  
+  /* RESPONSIVE SITE CODE */
+  
+  @media(max-width:768px) {
+    .flexcontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: grey;
+      margin-bottom: 124px;
+      width: 100%;
+    }
+    .buttoncontainer {
+        width: 100%;
+        float: inherit;
+        margin-top: 1%;
+        border: solid 1px black;
+        text-align: center;
+        border-radius: 1px;
+        margin-left: -2px;
+    }
+    .flexcontainer2 {
+      display: flex;
+      justify-content: center;
+      background-color: grey;
+      flex-direction: column;
+    }
+  
+    .projectscol {
+      display: flex;;
+      flex-direction: column;
+    }
+  
+    .maincolumncontainer{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  
+    .col1{
+      background-color: #515968;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .col2{
+      background-color: #e6e6e6;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .profilepic{
+      margin-top: 10px;
+      margin-bottom: 100px;
+    }
+  
+    .projcol1{
+      width: 40%;
+      height: 450px;
+      text-align: center;
+    }
+    .navbar a{
+      width: 20%;
+    }
+  
+    .cvcolumn2{
+      display: flex;;
+      flex-direction: column;
+      margin-top: 20px;
+      text-align: justify;
+    }
+  
+    .cvcolumn1{
+      display: flex;;
+      flex-direction: column;
+      margin-top: 20px;
+      text-align: justify;
+    }
+  
+    .cvcontainer{
+      margin-top: 100px;
+      font-family: 'Ruda';
+      height: 1000px;
+    }
+  
+    .cv1, .cv2, .cv3, .cv4 {
+      width: 92%;
+      margin-left: 30px;
+    }
+  
+  }
+  

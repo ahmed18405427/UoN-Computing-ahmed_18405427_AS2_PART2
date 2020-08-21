@@ -1,0 +1,86 @@
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="icon.png" type="image/icontype">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ruda">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+
+<!-- JAVASCRIPT CODE -->
+<!-- This code validates the form, if a field is empty it shows an alert. -->
+
+<script>
+function validate() {
+  var name = document.forms["myform"]["firstname"].value;
+  var lname = document.forms["myform"]["lastname"].value;
+  var phone = document.forms["myform"]["phone"].value;
+  var enquiry = document.forms["myform"]["enquiry"].value;
+
+  if (name == "" || lname == "" || phone == "" || enquiry == "") {
+    alert("All fields must be filled out");
+    return false;
+  }else{
+    alert("Thank you for contacting me, I will get back to you ASAP.");
+  }
+}
+</script>
+
+</head>
+
+<body>
+<div class='maincolumncontainer'>
+  <div class='col1'>
+    <div class='profilepic'>
+      <img src="images/profileimg.png" alt="CSS/HTML picture">
+      <h1>Sabbir Ahmed</h1>
+
+    </div>
+  </div>
+  <div class='col2'>
+    <div class='navbar'>
+        <a id="button1" href="index.html">Home</a>
+        <a id="button2" href="portfolio.html">My Portfolio</a>
+        <a id="button3" href="contact.html">Contact me</a>
+        <a id="button4" href="cv.html">CV</a>
+    </div>
+    <div class='contactdiv'>
+      <p>Hi, for any enquiries you can contact me here. And I will get back to you ASAP!</p>
+
+<!-- COntact form for any enquiries -->
+
+      <h3>Contact Form</h3>
+
+      <div class="formcontainer">
+        <form action="" name="myform">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="">
+          <label for="lname">Phone</label>
+          <input type="text" id="lname" name="phone" placeholder="">
+
+          <label for="subject">Enquiry</label>
+          <textarea id="subject" name="enquiry" placeholder="" style="height:200px"></textarea>
+
+          <input type="submit" value="Submit" onclick="validate()">
+        </form>
+      </div>
+
+  </div>
+  </div>
+</div>
+
+
+<footer>
+  <p>Copyright &copy;Curriculum Vitae</p>
+  <p>Contact: webdev@site.com</p>
+</footer>
+</body>
+</html>
